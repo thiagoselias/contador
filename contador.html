@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contador</title>
+	<style>
+		.contador{
+			font-size:46px;	
+			}
+	</style>
+</head>
+<body>
+	<div class="contador">
+		Contador:
+		<span id="contador"></span>
+	</div>
+	<script>
+		let elemento = document.querySelector('#contador');	
+		let contador = 0;
+		
+		setInterval(() => elemento.innerHTML = contador++, 1000);	
+	</script>
+</body>
+</html>	
